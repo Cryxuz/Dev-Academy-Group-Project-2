@@ -31,7 +31,7 @@ server.set('views', Path.resolve('server/views'))
  *************************/
 
 server.get('/', (req, res) => {
-  res.redirect('/')
+  res.redirect('/continents')
 })
 
 server.use('/hunters', huntersRoutes)

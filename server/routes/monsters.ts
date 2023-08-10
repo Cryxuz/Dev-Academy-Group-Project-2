@@ -22,7 +22,7 @@ router.get('/:id/monster', async (req, res) => {
   const monsterDetails = await db.getMonsterDetails(id)
 
   const monsterObj = monsterDetails[0]
-  res.render('monsterDetails', { monsterObj }) // add monster.hbs in render
+  res.render('monsterDetails', monsterObj) // add monster.hbs in render
 })
 
 // // get rid of this
