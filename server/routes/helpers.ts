@@ -1,4 +1,13 @@
-export const eventDays = ['friday', 'saturday', 'sunday']
+export const mainContinents = [
+  'asia',
+  'europe',
+  'north america',
+  'oceania',
+  'south america',
+  'africa',
+  'antartica',
+]
+// add continents
 
 /**
  * Takes a string and capitalises the first letter.
@@ -12,20 +21,20 @@ export function capitalise(name: string) {
 }
 
 /**
- * Ensures that @param day is a string and is a valid Event day
+ * Ensures that @param continent is a string and is a valid Event day
  * The default valid event days are: friday, saturday, and sunday
  *
  * If the input day is not valid, use the first valid day instead
- * @param {string} day
- * @param {string[]} days
+ * @param {string} continent
+ * @param {string[]} continents
  * @returns string
  */
-export function validateDay(
-  day: string | undefined,
-  days: string[] = eventDays
+export function validateContinent(
+  continent: string | undefined,
+  continents: string[] = mainContinents
 ) {
   // Use the first day as the default value if the day argument isn't valid
-  if (typeof day !== 'string') return days[0]
-  if (!days.includes(day)) return days[0]
-  return day
+  if (typeof continent !== 'string') return continents[0]
+  if (!continents.includes(continent)) return continents[0]
+  return continent
 }

@@ -1,14 +1,15 @@
 export function up(knex) {
-  return knex.schema.createTable('events', (table) => {
+  return knex.schema.createTable('hunters', (table) => {
     table.increments('id').primary()
-    table.integer('location_id').references('locations.id')
-    table.string('day')
-    table.string('time')
+    table.integer('monster_id').references('monsters.id')
     table.string('name')
+    table.string('location')
+    table.string('kills')
     table.string('description')
+    table.string('price')
   })
 }
 
 export function down(knex) {
-  return knex.schema.dropTable('events')
+  return knex.schema.dropTable('hunters')
 }

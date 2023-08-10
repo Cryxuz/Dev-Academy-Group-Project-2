@@ -3,9 +3,9 @@ import * as Path from 'node:path'
 import express from 'express'
 import * as hbs from 'express-handlebars'
 
-import locationRoutes from './routes/locations.ts'
-import scheduleRoutes from './routes/schedule.ts'
-import eventRoutes from './routes/events.ts' 
+import huntersRoutes from './routes/hunters.ts'
+import continentsRoutes from './routes/continents.ts'
+import monstersRoutes from './routes/monsters.ts'
 
 /*
  * create the server
@@ -31,9 +31,12 @@ server.set('views', Path.resolve('server/views'))
  *************************/
 
 server.get('/', (req, res) => {
-  res.redirect('/schedule/friday')
+  res.redirect('/')
 })
 
-server.use('/locations', locationRoutes)
-server.use('/schedule', scheduleRoutes)
-server.use('/events', eventRoutes)
+server.use('/hunters', huntersRoutes)
+server.use('/continents', continentsRoutes)
+server.use('/monsters', monstersRoutes)
+
+//sceddule to continents and events to monsters
+//comment out locatiosn related stuff
