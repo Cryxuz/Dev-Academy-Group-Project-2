@@ -26,3 +26,13 @@ export async function getMonsterDetails(id: number) {
 
   return result
 }
+export async function getHunterDetails(id: number) {
+  const result = await db('hunters').where('id', id).select()
+
+  return result
+}
+
+export async function getAllHunters() {
+  const result = await db('hunters').select('*') //.where('location', location)
+  return result
+}

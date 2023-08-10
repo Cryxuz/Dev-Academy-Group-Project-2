@@ -6,6 +6,19 @@ import * as db from '../db/index.ts'
 
 const router = express.Router()
 
+router.get('/hunters', async (req, res) => {
+  const huntersList = await db.getAllHunters()
+  res.render('allHunters', { huntersList })
+})
+
+router.get('/:id/hunter', async (req, res) => {
+  const id = Number(req.params.id)
+  const hunterDetails = await db.getHunterDetails(id)
+
+  const hunterObj = hunterDetails[0]
+  res.render('hunterDetails', hunterObj) // add monster.hbs in render
+})
+
 // GET /locations
 // router.get('/', (req, res) => {
 //   // TODO: Replace this with all of the locations in the database
@@ -29,28 +42,28 @@ const router = express.Router()
 // })
 
 // GET /locations/4/edit
-router.get('/:id/edit', (req, res) => {
-  const id = Number(req.params.id)
+// router.get('/:id/edit', (req, res) => {
+//   const id = Number(req.params.id)
 
-  // TODO: Get the location based on its id and replace this viewData
-  const viewData = {
-    id: id,
-    name: 'TangleStage',
-    description:
-      'Not the biggest stage, but perhaps the most hip. Not the biggest stage, but perhaps the most hip. Not the biggest stage, but perhaps the most hip.',
-  }
+//   // TODO: Get the location based on its id and replace this viewData
+//   const viewData = {
+//     id: id,
+//     name: 'TangleStage',
+//     description:
+//       'Not the biggest stage, but perhaps the most hip. Not the biggest stage, but perhaps the most hip. Not the biggest stage, but perhaps the most hip.',
+//   }
 
-  res.render('editLocation', viewData)
-})
+//   res.render('editLocation', viewData)
+// })
 
-// POST /locations/edit
-router.post('/edit', (req, res) => {
-  // ASSISTANCE: So you know what's being posted ;)
-  // const { id, name, description } = req.body
+// // POST /locations/edit
+// router.post('/edit', (req, res) => {
+//   // ASSISTANCE: So you know what's being posted ;)
+//   // const { id, name, description } = req.body
 
-  // TODO: Update the location in the database based on its id
+//   // TODO: Update the location in the database based on its id
 
-  res.redirect('/locations')
-})
+//   res.redirect('/locations')
+// })
 
 export default router
