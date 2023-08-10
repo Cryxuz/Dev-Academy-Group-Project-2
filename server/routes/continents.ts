@@ -6,7 +6,6 @@ import express from 'express'
 const router = express.Router()
 
 router.get('/', async (req, res) => {
-  console.log('hello')
   res.render('continent')
 })
 // GET / by continent
