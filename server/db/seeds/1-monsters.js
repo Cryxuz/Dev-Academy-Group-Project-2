@@ -83,7 +83,7 @@ export async function seed(knex) {
     },
     {
       id: 11,
-      name: 'Volcanic Golem',
+      name: 'Volcanic-Golem',
       location: 'Asia',
       type: 'Fire',
       description:
@@ -91,7 +91,7 @@ export async function seed(knex) {
     },
     {
       id: 12,
-      name: 'Windsong Sylph',
+      name: 'Windsong-Sylph',
       location: 'Australasia',
       type: 'Air',
       description:
@@ -99,7 +99,7 @@ export async function seed(knex) {
     },
     {
       id: 13,
-      name: 'Lurking Kraken',
+      name: 'Lurking-Kraken',
       location: 'South America',
       type: 'Water',
       description:
@@ -107,7 +107,7 @@ export async function seed(knex) {
     },
     {
       id: 14,
-      name: 'Thorned Behemoth',
+      name: 'Thorned-Behemoth',
       location: 'Africa',
       type: 'Earth',
       description:
@@ -115,7 +115,7 @@ export async function seed(knex) {
     },
     {
       id: 15,
-      name: 'Ethereal Specter',
+      name: 'Ethereal-Specter',
       location: 'Europe',
       type: 'Ghost',
       description:
@@ -123,7 +123,7 @@ export async function seed(knex) {
     },
     {
       id: 16,
-      name: 'Solar Serpent',
+      name: 'Solar-Serpent',
       location: 'North America',
       type: 'Light',
       description:
@@ -131,7 +131,7 @@ export async function seed(knex) {
     },
     {
       id: 17,
-      name: 'Darkling Harbinger',
+      name: 'Darkling-Harbinger',
       location: 'Antarctica',
       type: 'Dark',
       description:
@@ -139,7 +139,7 @@ export async function seed(knex) {
     },
     {
       id: 18,
-      name: 'Aqua Hydra',
+      name: 'Aqua-Hydra',
       location: 'Australasia',
       type: 'Water',
       description:
@@ -147,7 +147,7 @@ export async function seed(knex) {
     },
     {
       id: 19,
-      name: 'Ember Phoenix',
+      name: 'Ember-Phoenix',
       location: 'Asia',
       type: 'Fire',
       description:
@@ -155,7 +155,7 @@ export async function seed(knex) {
     },
     {
       id: 20,
-      name: 'Gale Griffin',
+      name: 'Gale-Griffin',
       location: 'Europe',
       type: 'Air',
       description:
