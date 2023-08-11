@@ -1,7 +1,10 @@
-<p>All the Hunters in the region: {{location}}</p>
-<ul>
+{{>navbar}}
+<div style="text-align: center;">
+<h3>All the Hunters in the region: {{location}}</h3>
+<ul class="">
     {{#each hunters}}
-    <li>Name: {{name}} </li>
-    <li>price: {{price}} </li>
+    <li><a href="/hunters/{{id}}/hunter">{{name}}</a> </li>
+    <br>
     {{/each}}
 </ul>
+</div>

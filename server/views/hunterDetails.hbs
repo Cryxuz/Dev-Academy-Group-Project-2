@@ -1,13 +1,25 @@
-    <h2>{{name}}</h2>
+    {{>navbar}}
+    <div style="text-align: center;">
+    <h2>{{hunter.name}}</h2>
 
-  <ul>
-    <li>Location: {{location}}</li>
-    <li>Type: {{type}}</li>
-    <li>Description: {{description}}</li>
-    <li>kills: {{kills}}</li>
-    <li>price: {{price}} </li>
+  <ul class='hunter-detail'>
+    <li>Location: {{hunter.location}}</li>
+    <li>Description: {{hunter.description}}</li>
+    <li>Kills: {{hunter.kills}}</li>
+    <li>Price: {{hunter.price}} </li>
+    
+    
+  </ul>
+  <h3>Monster Deck:</h3>
+  <ul class='deck'>
+
+    {{#each monster}}
+    <li> 
+      <a href="/monsters/{{monsterId}}/monster">{{monsterName}}</a>
+    </li>
+    {{/each}}
     <li></li>
     
   </ul>
 
-  <img class="hunter-img" src="/images/{{name}}.png" alt="A hunter called {{name}}">
+  <img class="hunter-img" src="/images/{{name}}.h3ng" alt="A hunter called {{name}}">

@@ -38,17 +38,12 @@ export async function getHunterDetails(id: number) {
       'hunters.id as id',
       'hunters.name as name',
       'hunters.location as location',
+      'hunters.description as description',
       'hunters.kills as kills',
-      'hunters.price as price'
+      'hunters.price as price',
+      'monsters.id as monsterId',
+      'monsters.name as monsterName'
     )
-    .groupBy(
-      'hunters.id',
-      'hunters.name',
-      'hunters.location',
-      'hunters.kills',
-      'hunters.price'
-    )
-    .select('monsters.id as monsterId', 'monsters.name as monsterName')
 
   return result
 }
@@ -59,7 +54,7 @@ export async function getAllHunters() {
 }
 export async function getHuntersByLocation(location: string) {
   const result = await db('hunters')
-    .select('name', 'price')
+    .select('name', 'price', 'id')
     .where('location', location)
   return result
 }
@@ -73,32 +68,3 @@ export async function addHunter(hunterData: {
 }) {
   await db('hunters').insert(hunterData)
 }
-
-// // // GET /schedule/friday
-// router.get('/:day', async (req, res) => {
-//   const day = validateDay(req.params.day)
-
-//   // TODO: Replace the hard-coded `events` array in the viewData with a set of events from the
-//   // database. Do this by selecting events that have a "day" field matching the `day` route parameter.
-//   // Continue to supply the `day` as a property of the viewData, alongside the array of events.
-//   const events = await db.getEventsByDay(day)
-//   const viewData = {
-//     day: day,
-//     events,
-//   }
-//   console.log(events)
-//   res.render('showDay', viewData)
-// })
-// // TODO: write some more database functions
-// export async function getEventsByDay(day: string) {
-//   const result = await db('events')
-//     .join('locations', 'events.location_id', 'locations.id')
-//     .select(
-//       'events.name as eventName',
-//       'events.description as description',
-//       'locations.name as locationName',
-//       'events.time as time'
-//     )
-//     .where('events.day', day)
-//   return result
-// }

@@ -4,15 +4,19 @@
 }
 
 html {
-  background-color: #afc2d5;
+  background-color: #080808;
 }
-
+ul {
+  list-style-type: none;
+}
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: white;
-  min-width: 360px;
-  max-width: 1150px;
-  margin: 0 auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 header {
@@ -26,7 +30,7 @@ header {
 
 a:link,
 a:visited {
-  color: #000724;
+  color: #050e2c;
   text-decoration: none;
 }
 
@@ -40,11 +44,21 @@ h1 {
   color: #840c0ae1;
 }
 
+#head {
+  color: #840c0ae1;
+  text-decoration: none;
+  padding: 128px 0 48px 48px;
+  font-size: 3.5em;
+}
 h2 {
   display: inline-block;
   margin: 1rem 0 1rem 3rem;
   font-size: 2rem;
   text-transform: capitalize;
+  padding: 10px;
+}
+h3 {
+  padding: 10px;
 }
 
 nav {
@@ -321,10 +335,11 @@ footer a:hover {
   box-sizing: border-box;
   box-shadow: -8px 9px 16px -3px gray;
   background: #171314;
+  padding-bottom: 60px;
 }
 
 .card-background {
-  height: 600px;
+  height: 900px;
   margin: 20px 20px 0 20px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -336,7 +351,7 @@ footer a:hover {
 .card-frame {
   z-index: 1;
   position: relative;
-  height: 108%;
+  height: 820px;
   max-width: 97%;
   left: 1%;
   top: 0.5%;

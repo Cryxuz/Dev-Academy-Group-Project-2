@@ -16,10 +16,15 @@ router.get('/:id/hunter', async (req, res) => {
   const hunterDetails = await db.getHunterDetails(id)
 
   const hunterObj = hunterDetails[0]
-  console.log(hunterObj)
-  res.render('hunterDetails', hunterObj) // add monster.hbs in render
+  console.log(hunterDetails)
+  const viewData = {
+    hunter: hunterObj,
+    monster: hunterDetails,
+  }
+  res.render('hunterDetails', viewData) // add monster.hbs in render
 })
 
+// fix me
 router.get('/:continent/hunters', async (req, res) => {
   const location = req.params.continent
 
@@ -36,57 +41,10 @@ router.get('/add', async (req, res) => {
   res.render('addHunter')
 })
 
-router.post('/hunters/add', async (req, res) => {
+router.post('/add', async (req, res) => {
   const { name, location, kills, description, price } = req.body
   await db.addHunter({ name, location, kills, description, price })
-  res.redirect('/hunters')
+  res.redirect('/hunters/hunters')
 })
-
-// GET /locations
-// router.get('/', (req, res) => {
-//   // TODO: Replace this with all of the locations in the database
-//   const locations = [
-//     {
-//       id: 1,
-//       name: 'TangleStage',
-//       description:
-//         'Not the biggest stage, but perhaps the most hip. Not the biggest stage, but perhaps the most hip. Not the biggest stage, but perhaps the most hip.',
-//     },
-//     {
-//       id: 2,
-//       name: 'Yella Yurt',
-//       description:
-//         "It's a freakin' yurt! Get in here! It's a freakin' yurt! Get in here! It's a freakin' yurt! Get in here! It's a freakin' yurt! Get in here!",
-//     },
-//   ]
-
-//   const viewData = { locations }
-//   res.render('showLocations', viewData)
-// })
-
-// GET /locations/4/edit
-// router.get('/:id/edit', (req, res) => {
-//   const id = Number(req.params.id)
-
-//   // TODO: Get the location based on its id and replace this viewData
-//   const viewData = {
-//     id: id,
-//     name: 'TangleStage',
-//     description:
-//       'Not the biggest stage, but perhaps the most hip. Not the biggest stage, but perhaps the most hip. Not the biggest stage, but perhaps the most hip.',
-//   }
-
-//   res.render('editLocation', viewData)
-// })
-
-// // POST /locations/edit
-// router.post('/edit', (req, res) => {
-//   // ASSISTANCE: So you know what's being posted ;)
-//   // const { id, name, description } = req.body
-
-//   // TODO: Update the location in the database based on its id
-
-//   res.redirect('/locations')
-// })
 
 export default router
