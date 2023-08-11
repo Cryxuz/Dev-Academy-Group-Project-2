@@ -18,13 +18,37 @@ const db = knex.default(config)
 // getMonsterHuntersByID
 // post route stretches - edit monster, add monster, find hunter in area
 
+export async function getAllMonsters() {
+  const result = await db('monsters').select()
+
+  return result
+}
+
 export async function getMonsterDetails(id: number) {
   const result = await db('monsters').where('id', id).select()
 
   return result
 }
 export async function getHunterDetails(id: number) {
-  const result = await db('hunters').where('id', id).select()
+  const result = await db('hunters')
+    .leftJoin('decks', 'decks.hunter_id', 'hunters.id')
+    .leftJoin('monsters', 'decks.monster_id', 'monsters.id')
+    .where('hunters.id', id)
+    .select(
+      'hunters.id as id',
+      'hunters.name as name',
+      'hunters.location as location',
+      'hunters.kills as kills',
+      'hunters.price as price'
+    )
+    .groupBy(
+      'hunters.id',
+      'hunters.name',
+      'hunters.location',
+      'hunters.kills',
+      'hunters.price'
+    )
+    .select('monsters.id as monsterId', 'monsters.name as monsterName')
 
   return result
 }
@@ -38,6 +62,16 @@ export async function getHuntersByLocation(location: string) {
     .select('name', 'price')
     .where('location', location)
   return result
+}
+
+export async function addHunter(hunterData: {
+  name: string
+  location: string
+  kills: string
+  description: string
+  price: string
+}) {
+  await db('hunters').insert(hunterData)
 }
 
 // // // GET /schedule/friday

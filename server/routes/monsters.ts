@@ -11,11 +11,11 @@ export default router
 // router.get('/:continent/monsters', async (req, res) => {
 //   const location = req.params.continent
 //   const regionalMonsters = await db.getMonsterByLocation(location)
+router.get('/monsters', async (req, res) => {
+  const monsters = await db.getAllMonsters()
 
-//   res.render('regionalMonsters', { regionalMonsters })
-// })
-// MAKe REGIONAL MONSTERS HBS
-// get route mosnters by ID for individual pages
+  res.render('allMonsters', { monsters }) // add monster.hbs in render
+})
 
 router.get('/:id/monster', async (req, res) => {
   const id = Number(req.params.id)

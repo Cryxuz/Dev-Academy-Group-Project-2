@@ -1,16 +1,19 @@
-{{> lineUpNav}}
+{{>navbar}}
 
 <h2>Add new Hunter</h2>
 {{!-- name, location, kills, description, price --}}
 <form method="POST" action="/hunters/add" class="form">
   <label for="name">Hunter name</label>
-  <input type="text" id="name" name="name" placeholder="Event name">
+  <input type="text" id="name" name="name" placeholder="hunter name">
 
-  <label for="location">Location</label>
+  {{!-- <label for="location">Location</label>
   <select id="location" name="location">
     {{#each locations}}
     <option value="{{id}}">{{name}}</option>
     {{/each}}
+  </select> --}}
+    <label for="location">Location</label>
+    <textarea rows="3" id="location" name="location" placeholder="hunters location"></textarea>
 
     <label for="Kills">Kills</label>
     <textarea rows="3" id="kills" name="kills" placeholder="hunters Kills"></textarea>
