@@ -247,13 +247,24 @@ footer a:hover {
  — — — — — — — — — — — — -
  — — — — — — — — — — — — -
 */
-.name,
 .type {
   font-size: 1.3em;
   margin-left: 10px;
   align-self: baseline;
   font-weight: 600;
+  color: #840c0ae1;
+  font-family: rubik wet paint;
 }
+
+.name {
+  font-size: 5em;
+  margin-left: 10px;
+  align-self: baseline;
+  font-weight: 600;
+  color: #840c0ae1;
+  font-family: rubik wet paint;
+}
+
 .frame-header,
 .frame-type-line {
   background: linear-gradient(
@@ -276,6 +287,8 @@ footer a:hover {
 .frame-type-line {
   box-shadow: 0 0 0 2px #171314, 0 0 0 5px #26714a, -3px 3px 2px 5px #171314;
   margin-bottom: 7px;
+  display: flex;
+  flex-direction: column;
 }
 .frame-text-box {
   margin: 0 10px;
@@ -334,4 +347,68 @@ footer a:hover {
 
 .card-background {
   z-index: 0;
+}
+
+/* BG img of homepage */
+.bg-img {
+  background-image: url('https://i.pinimg.com/736x/b1/1c/4d/b11c4d3c4407d7c5160608f91c950d77.jpg');
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  height: 550px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.region {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background-color: red;
+  border: 0.5px greenyellow solid;
+}
+
+.na {
+  grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.sa {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.eu {
+  grid-area: 2 / 5 / 3 / 6;
+}
+
+.africa {
+  grid-area: 3 / 5 / 4 / 6;
+}
+
+.asia {
+  grid-area: 2 / 7 / 3 / 8;
+}
+
+.oce {
+  grid-area: 4 / 7 / 5 / 8;
+  display: grid;
+  align-self: start;
+  justify-self: end;
+}
+
+.antartica {
+  grid-area: 5 / 5 / 6 / 6;
+}
+
+.homepage-div {
+  text-align: center;
+  padding: 0.3rem;
+  font-size: 1.5rem;
+  background-color: #feffb1;
 }
