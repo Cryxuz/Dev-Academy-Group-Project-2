@@ -16,6 +16,7 @@ router.get('/:id/hunter', async (req, res) => {
   const hunterDetails = await db.getHunterDetails(id)
 
   const hunterObj = hunterDetails[0]
+  console.log(hunterObj)
   res.render('hunterDetails', hunterObj) // add monster.hbs in render
 })
 
@@ -29,6 +30,16 @@ router.get('/:continent/hunters', async (req, res) => {
   }
   res.render('regionalHunters', viewData)
   console.log(huntersByRegion)
+})
+
+router.get('/add', async (req, res) => {
+  res.render('addHunter')
+})
+
+router.post('/hunters/add', async (req, res) => {
+  const { name, location, kills, description, price } = req.body
+  await db.addHunter({ name, location, kills, description, price })
+  res.redirect('/hunters')
 })
 
 // GET /locations
