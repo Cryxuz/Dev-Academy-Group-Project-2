@@ -19,6 +19,17 @@ router.get('/:id/hunter', async (req, res) => {
   res.render('hunterDetails', hunterObj) // add monster.hbs in render
 })
 
+router.get('/:continent/hunters', async (req, res) => {
+  const location = req.params.continent
+  const huntersByRegion = await db.getHuntersByLocation(location)
+  const viewData = {
+    hunters: huntersByRegion,
+    location: location,
+  }
+  res.render('regionalHunters', viewData)
+  console.log(viewData)
+})
+
 // GET /locations
 // router.get('/', (req, res) => {
 //   // TODO: Replace this with all of the locations in the database

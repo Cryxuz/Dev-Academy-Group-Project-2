@@ -17,10 +17,7 @@ const db = knex.default(config)
 // getAllMonsterHunters
 // getMonsterHuntersByID
 // post route stretches - edit monster, add monster, find hunter in area
-export async function getMonsterByLocation(location: string) {
-  const result = await db('monsters').where('location', location).select()
-  return result
-}
+
 export async function getMonsterDetails(id: number) {
   const result = await db('monsters').where('id', id).select()
 
@@ -36,3 +33,36 @@ export async function getAllHunters() {
   const result = await db('hunters').select('*') //.where('location', location)
   return result
 }
+export async function getHuntersByLocation(location: string) {
+  const result = await db('hunters').select().where('location', location)
+  return result
+}
+
+// // // GET /schedule/friday
+// router.get('/:day', async (req, res) => {
+//   const day = validateDay(req.params.day)
+
+//   // TODO: Replace the hard-coded `events` array in the viewData with a set of events from the
+//   // database. Do this by selecting events that have a "day" field matching the `day` route parameter.
+//   // Continue to supply the `day` as a property of the viewData, alongside the array of events.
+//   const events = await db.getEventsByDay(day)
+//   const viewData = {
+//     day: day,
+//     events,
+//   }
+//   console.log(events)
+//   res.render('showDay', viewData)
+// })
+// // TODO: write some more database functions
+// export async function getEventsByDay(day: string) {
+//   const result = await db('events')
+//     .join('locations', 'events.location_id', 'locations.id')
+//     .select(
+//       'events.name as eventName',
+//       'events.description as description',
+//       'locations.name as locationName',
+//       'events.time as time'
+//     )
+//     .where('events.day', day)
+//   return result
+// }
