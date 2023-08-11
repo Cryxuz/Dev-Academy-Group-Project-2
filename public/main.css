@@ -16,11 +16,12 @@ body {
 }
 
 header {
-  background-image: url('/images/forest-header.jpg');
+  background-image: url('/images/monsters.png');
   background-size: cover;
   background-position: center;
   background-color: #000724;
   width: 100%;
+  font-family: rubik wet paint;
 }
 
 a:link,
@@ -36,7 +37,7 @@ a:hover {
 h1 {
   padding: 128px 0 48px 48px;
   font-size: 3.5em;
-  color: white;
+  color: #840c0ae1;
 }
 
 h2 {
@@ -219,7 +220,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: #1a5068;
+  background-color: #101212;
   text-align: center;
 }
 
@@ -237,4 +238,100 @@ footer a:visited {
 
 footer a:hover {
   color: white;
+}
+
+/*
+ — — — — — — — — — — — — -
+ — — — — — — — — — — — — -
+ BORDERS
+ — — — — — — — — — — — — -
+ — — — — — — — — — — — — -
+*/
+.name,
+.type {
+  font-size: 1.3em;
+  margin-left: 10px;
+  align-self: baseline;
+  font-weight: 600;
+}
+.frame-header,
+.frame-type-line {
+  background: linear-gradient(
+      0deg,
+      rgba(201, 216, 201, 0.3),
+      rgba(201, 216, 209, 0.3)
+    ),
+    url(https://image.ibb.co/jKByZn/tile_bg_1.jpg);
+  display: flex;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 18px/40px;
+}
+.frame-header,
+.frame-art,
+.frame-type-line {
+  box-shadow: 0 0 0 2px #171314, 0 0 0 5px #26714a, -3px 3px 2px 5px #171314;
+  margin-bottom: 7px;
+}
+.frame-text-box {
+  margin: 0 10px;
+  background: #d3ded6;
+  background-image: url(https://image.ibb.co/dFcNx7/tile_bg_2.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px 6px;
+  box-sizing: border-box;
+  font-size: 1.2em;
+}
+.frame-type-line {
+  margin-top: 0;
+}
+.ftb-inner-margin {
+  margin: 5px 1px;
+}
+.frame-art {
+  height: 50%; /* make it fit in the card */
+  margin: 0 10px; /* align it vertically */
+}
+.card-container {
+  border: 1px solid black;
+  width: 500px;
+  height: 700px;
+  margin: 0 auto;
+  margin-top: 56px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  box-shadow: -8px 9px 16px -3px gray;
+  background: #171314;
+}
+
+.card-background {
+  height: 600px;
+  margin: 20px 20px 0 20px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
+  background-color: #bbb;
+}
+
+.card-frame {
+  z-index: 1;
+  position: relative;
+  height: 108%;
+  max-width: 97%;
+  left: 1%;
+  top: 0.5%;
+  left: 1.2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-background {
+  z-index: 0;
 }
