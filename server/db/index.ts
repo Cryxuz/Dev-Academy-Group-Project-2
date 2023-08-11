@@ -34,7 +34,9 @@ export async function getAllHunters() {
   return result
 }
 export async function getHuntersByLocation(location: string) {
-  const result = await db('hunters').select().where('location', location)
+  const result = await db('hunters')
+    .select('name', 'price')
+    .where('location', location)
   return result
 }
 

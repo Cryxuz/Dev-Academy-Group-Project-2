@@ -21,13 +21,14 @@ router.get('/:id/hunter', async (req, res) => {
 
 router.get('/:continent/hunters', async (req, res) => {
   const location = req.params.continent
+
   const huntersByRegion = await db.getHuntersByLocation(location)
   const viewData = {
     hunters: huntersByRegion,
     location: location,
   }
   res.render('regionalHunters', viewData)
-  console.log(viewData)
+  console.log(huntersByRegion)
 })
 
 // GET /locations
