@@ -14,6 +14,12 @@ router.get('/:continent/monsters', async (req, res) => {
 
   res.render('regionalMonsters', { regionalMonsters })
 })
+
+// router.get('/monsters', async (req, res) => {
+//   const monsters = await db.getAllMonsters()
+//   res.render('monsters', { monsters })
+// })
+
 // MAKe REGIONAL MONSTERS HBS
 // get route mosnters by ID for individual pages
 

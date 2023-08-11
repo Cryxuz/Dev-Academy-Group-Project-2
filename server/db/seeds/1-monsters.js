@@ -4,7 +4,7 @@ export async function seed(knex) {
     {
       id: 1,
       name: 'Firebeast',
-      location: 'North America',
+      location: 'north-america',
       type: 'Fire',
       description:
         'A fierce creature with blazing red scales and the ability to breathe fire.',
@@ -12,7 +12,7 @@ export async function seed(knex) {
     {
       id: 2,
       name: 'Frostwing',
-      location: 'Antarctica',
+      location: 'antarctica',
       type: 'Ice',
       description:
         'A majestic ice dragon that rules the frozen lands with its icy breath.',
@@ -20,7 +20,7 @@ export async function seed(knex) {
     {
       id: 3,
       name: 'Jungleclaw',
-      location: 'South America',
+      location: 'south-america',
       type: 'Beast',
       description:
         'A stealthy predator with sharp claws, lurking in the dense jungles.',
@@ -28,7 +28,7 @@ export async function seed(knex) {
     {
       id: 4,
       name: 'Stormrider',
-      location: 'Europe',
+      location: 'europe',
       type: 'Air',
       description:
         'A mystical being that rides the stormy winds and commands lightning.',
@@ -36,7 +36,7 @@ export async function seed(knex) {
     {
       id: 5,
       name: 'Sandsnake',
-      location: 'Africa',
+      location: 'africa',
       type: 'Earth',
       description:
         'A massive serpent that burrows beneath the desert sands, striking with deadly force.',
@@ -44,7 +44,7 @@ export async function seed(knex) {
     {
       id: 6,
       name: 'Mistwalker',
-      location: 'Asia',
+      location: 'asia',
       type: 'Water',
       description:
         'An elusive spirit that dwells within misty lakes and grants blessings to those who find it.',
@@ -52,7 +52,7 @@ export async function seed(knex) {
     {
       id: 7,
       name: 'Thunderhoof',
-      location: 'North America',
+      location: 'north-america',
       type: 'Electric',
       description:
         'A wild and powerful creature with electrified horns that can create thunderstorms.',
@@ -60,7 +60,7 @@ export async function seed(knex) {
     {
       id: 8,
       name: 'Rockslide',
-      location: 'Australasia',
+      location: 'oceania',
       type: 'Earth',
       description:
         'A mountain-dwelling giant known for causing avalanches and shaping the landscape.',
@@ -68,7 +68,7 @@ export async function seed(knex) {
     {
       id: 9,
       name: 'Shadowclaw',
-      location: 'Europe',
+      location: 'europe',
       type: 'Dark',
       description:
         'A mysterious entity that lurks in the shadows, with eyes that can pierce through the night.',
@@ -76,7 +76,7 @@ export async function seed(knex) {
     {
       id: 10,
       name: 'Celestial',
-      location: 'Antarctica',
+      location: 'antarctica',
       type: 'Light',
       description:
         'An ethereal being that emanates radiant light and brings hope to the coldest of places.',
@@ -84,7 +84,7 @@ export async function seed(knex) {
     {
       id: 11,
       name: 'Volcanic-Golem',
-      location: 'Asia',
+      location: 'asia',
       type: 'Fire',
       description:
         'A massive creature made of molten rock, emerging from the heart of a volcano.',
@@ -92,7 +92,7 @@ export async function seed(knex) {
     {
       id: 12,
       name: 'Windsong-Sylph',
-      location: 'Australasia',
+      location: 'oceania',
       type: 'Air',
       description:
         'A graceful being with wings of air, capable of creating soothing melodies with every flutter.',
@@ -100,7 +100,7 @@ export async function seed(knex) {
     {
       id: 13,
       name: 'Lurking-Kraken',
-      location: 'South America',
+      location: 'south-america',
       type: 'Water',
       description:
         'A legendary sea monster with tentacles that emerge from the depths to snatch ships.',
@@ -108,7 +108,7 @@ export async function seed(knex) {
     {
       id: 14,
       name: 'Thorned-Behemoth',
-      location: 'Africa',
+      location: 'africa',
       type: 'Earth',
       description:
         'A colossal creature covered in thick, spiked armor, trampling through dense forests.',
@@ -116,7 +116,7 @@ export async function seed(knex) {
     {
       id: 15,
       name: 'Ethereal-Specter',
-      location: 'Europe',
+      location: 'europe',
       type: 'Ghost',
       description:
         'A ghostly entity that haunts ancient castles and crypts, with a chilling touch.',
@@ -124,7 +124,7 @@ export async function seed(knex) {
     {
       id: 16,
       name: 'Solar-Serpent',
-      location: 'North America',
+      location: 'north-america',
       type: 'Light',
       description:
         'A radiant snake that harnesses the power of the sun, illuminating the darkest corners.',
@@ -132,7 +132,7 @@ export async function seed(knex) {
     {
       id: 17,
       name: 'Darkling-Harbinger',
-      location: 'Antarctica',
+      location: 'antarctica',
       type: 'Dark',
       description:
         'A foreboding figure that heralds impending doom, casting an aura of darkness.',
@@ -140,7 +140,7 @@ export async function seed(knex) {
     {
       id: 18,
       name: 'Aqua-Hydra',
-      location: 'Australasia',
+      location: 'oceania',
       type: 'Water',
       description:
         'A multi-headed sea serpent that guards hidden treasures beneath the ocean waves.',
@@ -148,7 +148,7 @@ export async function seed(knex) {
     {
       id: 19,
       name: 'Ember-Phoenix',
-      location: 'Asia',
+      location: 'asia',
       type: 'Fire',
       description:
         'A legendary bird that rises from the ashes with flames that can incinerate anything.',
@@ -156,7 +156,7 @@ export async function seed(knex) {
     {
       id: 20,
       name: 'Gale-Griffin',
-      location: 'Europe',
+      location: 'europe',
       type: 'Air',
       description:
         'A majestic creature with the body of a lion and the wings of an eagle, soaring through the skies.',

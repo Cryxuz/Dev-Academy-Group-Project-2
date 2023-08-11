@@ -7,7 +7,7 @@ export async function seed(knex) {
       id: 1,
       monster_id: 5,
       name: 'Valeria Steel',
-      location: 'Asia',
+      location: 'asia',
       kills: '37',
       description:
         'A skilled monster hunter with nerves of steel and a sharp mind.',
@@ -17,7 +17,7 @@ export async function seed(knex) {
       id: 2,
       monster_id: 12,
       name: 'Luther Shadowbane',
-      location: 'North America',
+      location: 'north-america',
       kills: '24',
       description:
         'A mysterious hunter who thrives in the darkness, dealing with supernatural threats.',
@@ -27,7 +27,7 @@ export async function seed(knex) {
       id: 3,
       monster_id: 9,
       name: 'Elena Moonshadow',
-      location: 'South America',
+      location: 'south-america',
       kills: '18',
       description:
         'A swift and agile hunter known for her exceptional archery skills.',
@@ -37,7 +37,7 @@ export async function seed(knex) {
       id: 4,
       monster_id: 18,
       name: 'Gareth Stormrider',
-      location: 'Europe',
+      location: 'europe',
       kills: '29',
       description:
         'An experienced monster slayer who harnesses the power of storms.',
@@ -47,7 +47,7 @@ export async function seed(knex) {
       id: 5,
       monster_id: 3,
       name: 'Kai Desertwind',
-      location: 'Africa',
+      location: 'africa',
       kills: '22',
       description:
         'A nomadic hunter skilled in surviving the harsh desert environments.',
@@ -57,7 +57,7 @@ export async function seed(knex) {
       id: 6,
       monster_id: 20,
       name: 'Aria Lightbringer',
-      location: 'Australasia',
+      location: 'oceania',
       kills: '15',
       description:
         'A noble hunter dedicated to preserving the balance between light and darkness.',
@@ -67,7 +67,7 @@ export async function seed(knex) {
       id: 7,
       monster_id: 8,
       name: 'Dorian Stoneheart',
-      location: 'Antarctica',
+      location: 'antarctica',
       kills: '12',
       description:
         'A relentless hunter who braves the frozen wastelands to face mighty beasts.',
@@ -77,7 +77,7 @@ export async function seed(knex) {
       id: 8,
       monster_id: 1,
       name: 'Soraya Firestorm',
-      location: 'North America',
+      location: 'north-america',
       kills: '28',
       description:
         'A fiery hunter with a burning determination to protect her homeland.',
@@ -87,7 +87,7 @@ export async function seed(knex) {
       id: 9,
       monster_id: 17,
       name: 'Raven Nightshade',
-      location: 'Europe',
+      location: 'e',
       kills: '20',
       description:
         'A shadowy figure known for hunting creatures of the night and unraveling mysteries.',
@@ -97,7 +97,7 @@ export async function seed(knex) {
       id: 10,
       monster_id: 14,
       name: 'Alden Ironclad',
-      location: 'South America',
+      location: 'south-america',
       kills: '14',
       description:
         'A battle-hardened warrior who faces monstrous threats head-on with his trusty axe.',
@@ -107,7 +107,7 @@ export async function seed(knex) {
       id: 11,
       monster_id: 2,
       name: 'Cassandra Swiftstrike',
-      location: 'Asia',
+      location: 'asia',
       kills: '19',
       description:
         'A swift and nimble hunter known for her lightning-fast strikes.',
@@ -117,7 +117,7 @@ export async function seed(knex) {
       id: 12,
       monster_id: 15,
       name: 'Ezekiel Ironheart',
-      location: 'Europe',
+      location: 'e',
       kills: '26',
       description:
         'A fearless warrior who wields a mighty hammer to vanquish monstrous foes.',
@@ -127,7 +127,7 @@ export async function seed(knex) {
       id: 13,
       monster_id: 7,
       name: 'Seraphina Starlight',
-      location: 'Australasia',
+      location: 'oceania',
       kills: '17',
       description:
         'A celestial hunter gifted with the power of the stars, guiding her on her quests.',
@@ -137,7 +137,7 @@ export async function seed(knex) {
       id: 14,
       monster_id: 19,
       name: 'Aldric Thunderstrike',
-      location: 'North America',
+      location: 'north-america',
       kills: '23',
       description:
         'A thunderous hunter with a hammer that can summon lightning to smite his enemies.',
@@ -147,7 +147,7 @@ export async function seed(knex) {
       id: 15,
       monster_id: 6,
       name: 'Luna Nightwalker',
-      location: 'Africa',
+      location: 'africa',
       kills: '16',
       description:
         'A hunter who thrives under the moonlight, using her ethereal powers to defeat monsters.',
@@ -157,7 +157,7 @@ export async function seed(knex) {
       id: 16,
       monster_id: 10,
       name: 'Kieran Frostbite',
-      location: 'Antarctica',
+      location: 'antarctica',
       kills: '13',
       description:
         'A frigid warrior who braves the icy tundras, wielding a frosty blade against beasts.',
@@ -167,7 +167,7 @@ export async function seed(knex) {
       id: 17,
       monster_id: 16,
       name: 'Silvanus Windwhisper',
-      location: 'South America',
+      location: 'south-america',
       kills: '21',
       description:
         'A wind-controlling hunter who commands gales and breezes in battles.',
@@ -177,7 +177,7 @@ export async function seed(knex) {
       id: 18,
       monster_id: 4,
       name: 'Isolde Moonshadow',
-      location: 'Australasia',
+      location: 'oceania',
       kills: '27',
       description:
         'A dual-wielding rogue who strikes swiftly and silently, like the night.',
@@ -187,7 +187,7 @@ export async function seed(knex) {
       id: 19,
       monster_id: 13,
       name: 'Thalia Stormseeker',
-      location: 'Europe',
+      location: 'e',
       kills: '14',
       description:
         'A storm-chasing hunter who seeks out powerful creatures during tempestuous weather.',
@@ -197,7 +197,7 @@ export async function seed(knex) {
       id: 20,
       monster_id: 11,
       name: 'Leif Earthshaker',
-      location: 'North America',
+      location: 'north-america',
       kills: '18',
       description:
         'A mighty warrior who uses his earth-shaking hammer to bring down colossal foes.',
@@ -207,7 +207,7 @@ export async function seed(knex) {
       id: 21,
       monster_id: 8,
       name: 'Lyra Starcaller',
-      location: 'Australasia',
+      location: 'oceania',
       kills: '20',
       description:
         'A celestial mage who commands the powers of stars to combat monstrous foes.',
@@ -217,7 +217,7 @@ export async function seed(knex) {
       id: 22,
       monster_id: 16,
       name: 'Rowan Windrider',
-      location: 'North America',
+      location: 'north-america',
       kills: '25',
       description:
         'A skybound hunter who rides the winds, using his aerial advantage to fight creatures.',
@@ -227,7 +227,7 @@ export async function seed(knex) {
       id: 23,
       monster_id: 10,
       name: 'Freya Frostglade',
-      location: 'Europe',
+      location: 'e',
       kills: '19',
       description:
         'A frosty huntress who wields ice magic to freeze and defeat her adversaries.',
@@ -237,7 +237,7 @@ export async function seed(knex) {
       id: 24,
       monster_id: 4,
       name: 'Haldor Stoneshield',
-      location: 'Africa',
+      location: 'africa',
       kills: '15',
       description:
         'A durable defender who shields his companions while engaging monstrous threats.',
@@ -247,7 +247,7 @@ export async function seed(knex) {
       id: 25,
       monster_id: 18,
       name: 'Ivy Thornheart',
-      location: 'South America',
+      location: 'south-america',
       kills: '22',
       description:
         'A nature-loving hunter who uses her connection with flora to outwit and overpower foes.',
@@ -257,7 +257,7 @@ export async function seed(knex) {
       id: 26,
       monster_id: 1,
       name: 'Soren Firebrand',
-      location: 'Asia',
+      location: 'asia',
       kills: '30',
       description:
         'A fiery champion who harnesses the inferno to defeat creatures with burning might.',
@@ -267,7 +267,7 @@ export async function seed(knex) {
       id: 27,
       monster_id: 13,
       name: 'Selene Moonshadow',
-      location: 'Antarctica',
+      location: 'antarctica',
       kills: '16',
       description:
         'A moonlit huntress who strikes monsters with precision under the shimmering night sky.',
@@ -277,7 +277,7 @@ export async function seed(knex) {
       id: 28,
       monster_id: 7,
       name: 'Kael Stormbringer',
-      location: 'Australasia',
+      location: 'oceania',
       kills: '23',
       description:
         'A tempestuous warrior who commands the elements to unleash powerful storms.',
@@ -287,7 +287,7 @@ export async function seed(knex) {
       id: 29,
       monster_id: 5,
       name: 'Darius Flameheart',
-      location: 'North America',
+      location: 'north-america',
       kills: '27',
       description:
         'A valiant knight who wields a blazing sword, burning monsters to ashes.',
@@ -297,7 +297,7 @@ export async function seed(knex) {
       id: 30,
       monster_id: 11,
       name: 'Astrid Earthshaker',
-      location: 'Europe',
+      location: 'e',
       kills: '21',
       description:
         'An earth-shattering huntress who uses seismic forces to crush her monstrous foes.',
@@ -307,7 +307,7 @@ export async function seed(knex) {
       id: 31,
       monster_id: 14,
       name: 'Eira Snowblade',
-      location: 'Antarctica',
+      location: 'antarctica',
       kills: '17',
       description:
         'A frigid warrior who wields a frosty blade against monstrous threats in the icy wastelands.',
@@ -327,7 +327,7 @@ export async function seed(knex) {
       id: 33,
       monster_id: 17,
       name: 'Astraea Voidbringer',
-      location: 'Asia',
+      location: 'asia',
       kills: '20',
       description:
         'A master of dark magic who manipulates the void to battle creatures of the unknown.',
@@ -337,7 +337,7 @@ export async function seed(knex) {
       id: 34,
       monster_id: 2,
       name: 'Leona Sunfire',
-      location: 'South America',
+      location: 'south-america',
       kills: '25',
       description:
         'A radiant warrior who channels the power of the sun to defeat her monstrous adversaries.',
@@ -347,7 +347,7 @@ export async function seed(knex) {
       id: 35,
       monster_id: 9,
       name: 'Thorne Thornwhisper',
-      location: 'Europe',
+      location: 'e',
       kills: '18',
       description:
         'A nature-bound hunter who communicates with plants and animals to protect the world.',
@@ -357,7 +357,7 @@ export async function seed(knex) {
       id: 36,
       monster_id: 20,
       name: 'Cassian Skybreaker',
-      location: 'Australasia',
+      location: 'oceania',
       kills: '23',
       description:
         'A storm-chasing aviator who soars through the skies to battle monstrous forces.',
@@ -367,7 +367,7 @@ export async function seed(knex) {
       id: 37,
       monster_id: 6,
       name: 'Eldric Thornheart',
-      location: 'North America',
+      location: 'north-america',
       kills: '16',
       description:
         "A protector of the wilds who wields nature's forces to defeat unnatural creatures.",
@@ -377,7 +377,7 @@ export async function seed(knex) {
       id: 38,
       monster_id: 11,
       name: 'Kara Earthshaker',
-      location: 'Europe',
+      location: 'e',
       kills: '22',
       description:
         'An earth-moving warrior who shapes the terrain to outmaneuver and conquer monsters.',
@@ -387,7 +387,7 @@ export async function seed(knex) {
       id: 39,
       monster_id: 1,
       name: 'Lorelei Fireheart',
-      location: 'Asia',
+      location: 'asia',
       kills: '28',
       description:
         'A fiery sorceress who commands flames to defeat the forces of darkness.',
@@ -397,7 +397,7 @@ export async function seed(knex) {
       id: 40,
       monster_id: 15,
       name: 'Alden Nightfall',
-      location: 'North America',
+      location: 'north-america',
       kills: '21',
       description:
         'A shadow-wielding hunter who thrives in the cover of night to battle evil creatures.',
