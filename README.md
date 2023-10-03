@@ -3,4 +3,8 @@
 - Hire Hunters to kill monsters
 - Group project # 2
 - Click the red dots (region)
-- Unfinished imgs of hunters
+- Created by:
+  - Paul-T
+  - Kate
+  - Gabriel
+  - Caleb
