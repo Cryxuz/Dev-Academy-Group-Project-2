@@ -27,6 +27,11 @@ header {
   width: 100%;
   font-family: rubik wet paint;
 }
+.monster-img {
+  height: 300px;
+  margin-top: 30px;
+  border-radius: 1rem;
+}
 
 a:link,
 a:visited {
@@ -42,16 +47,17 @@ h1 {
   padding: 128px 0 48px 48px;
   font-size: 3.5em;
   color: #840c0ae1;
+  padding-right: 100px;
 }
 
 #head {
   color: #840c0ae1;
   text-decoration: none;
   padding: 128px 0 48px 48px;
-  font-size: 3.5em;
+  font-size: 3.63em;
+  width: 100%;
 }
 h2 {
-  display: inline-block;
   margin: 1rem 0 1rem 3rem;
   font-size: 2rem;
   text-transform: capitalize;
@@ -165,7 +171,9 @@ p {
   margin-top: 15px;
   font-size: 0.875rem;
 }
-
+.description {
+  text-align: center;
+}
 .event-description {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -263,20 +271,24 @@ footer a:hover {
 */
 .type {
   font-size: 1.3em;
-  margin-left: 10px;
-  align-self: baseline;
+  text-align: center;
   font-weight: 600;
   color: #840c0ae1;
   font-family: rubik wet paint;
 }
-
+/* 
 .name {
   font-size: 5em;
-  margin-left: 10px;
-  align-self: baseline;
+  margin-left: 5px;
+  align-self: top;
   font-weight: 600;
   color: #840c0ae1;
   font-family: rubik wet paint;
+} */
+.name {
+  color: #840c0ae1;
+  font-family: rubik wet paint;
+  text-align: center;
 }
 
 .frame-header,
@@ -287,33 +299,35 @@ footer a:hover {
       rgba(201, 216, 209, 0.3)
     ),
     url(https://image.ibb.co/jKByZn/tile_bg_1.jpg);
-  display: flex;
+
   margin-top: 10px;
   margin-left: 5px;
   margin-right: 5px;
-  padding: 8px 0;
-  display: flex;
-  justify-content: space-between;
+
   border-radius: 18px/40px;
 }
 .frame-header,
 .frame-art,
 .frame-type-line {
   box-shadow: 0 0 0 2px #171314, 0 0 0 5px #26714a, -3px 3px 2px 5px #171314;
-  margin-bottom: 7px;
-  display: flex;
-  flex-direction: column;
+  padding-bottom: 50px;
+}
+.frame-header {
+  height: 80px;
 }
 .frame-text-box {
-  margin: 0 10px;
   background: #d3ded6;
   background-image: url(https://image.ibb.co/dFcNx7/tile_bg_2.jpg);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 50px 6px;
+  padding: 30px 6px;
   box-sizing: border-box;
   font-size: 1.2em;
+  width: 444.25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 1rem;
 }
 .frame-type-line {
   margin-top: 0;
@@ -339,13 +353,14 @@ footer a:hover {
 }
 
 .card-background {
-  height: 900px;
+  height: 670px;
   margin: 20px 20px 0 20px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 8%;
   border-bottom-right-radius: 8%;
   background-color: #bbb;
+  z-index: 0;
 }
 
 .card-frame {
@@ -358,10 +373,6 @@ footer a:hover {
   left: 1.2%;
   display: flex;
   flex-direction: column;
-}
-
-.card-background {
-  z-index: 0;
 }
 
 /* BG img of homepage */
